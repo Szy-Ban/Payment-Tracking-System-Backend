@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Zakup spożywczy",
+    "amount": 150,
+    "category": "Jedzenie",
+    "date": "2024-04-10",
+    "description": "Zakup produktów spożywczych w sklepie Lidl"
+  },
+  {
+    "id": 2,
+    "title": "Rachunek za prąd",
+    "amount": 200,
+    "category": "Media",
+    "date": "2024-04-15",
+    "description": "Opłata za energię elektryczną za marzec"
+  },
+  {
+    "id": 3,
+    "title": "Zakup książki",
+    "amount": 50,
+    "category": "Rozrywka",
+    "date": "2024-04-18",
+    "description": "Książka 'Zielona mila' w księgarni"
+  },
+  {
+    "id": 4,
+    "title": "Bilet do kina",
+    "amount": 40,
+    "category": "Rozrywka",
+    "date": "2024-04-20",
+    "description": "Bilet na film 'Nowy świat'"
+  },
+  {
+    "id": 5,
+    "title": "Zakup odzieży",
+    "amount": 300,
+    "category": "Odzież",
+    "date": "2024-04-22",
+    "description": "Ubrania w sklepie H&M"
+  },
+  {
+    "id": 6,
+    "title": "Paliwo",
+    "amount": 250,
+    "category": "Transport",
+    "date": "2024-04-25",
+    "description": "Tankowanie samochodu na stacji Orlen"
+  },
+  {
+    "id": 7,
+    "title": "Restauracja",
+    "amount": 120,
+    "category": "Jedzenie",
+    "date": "2024-04-28",
+    "description": "Obiad w restauracji 'Włoska kuchnia'"
+  },
+  {
+    "id": 8,
+    "title": "Abonament telefoniczny",
+    "amount": 60,
+    "category": "Usługi",
+    "date": "2024-05-01",
+    "description": "Opłata za abonament telefoniczny za maj"
+  },
+  {
+    "id": 9,
+    "title": "Zakup sprzętu elektronicznego",
+    "amount": 1200,
+    "category": "Elektronika",
+    "date": "2024-05-05",
+    "description": "Zakup laptopa w sklepie MediaMarkt"
+  },
+  {
+    "id": 10,
+    "title": "Kurs online",
+    "amount": 400,
+    "category": "Edukacja",
+    "date": "2024-05-10",
+    "description": "Kurs programowania na platformie Udemy"
+  }
+]

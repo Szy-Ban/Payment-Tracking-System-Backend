@@ -1,0 +1,20 @@
+### Główna strona
+GET http://localhost:5000/
+
+### Pobierz wszystkie wydatki
+GET http://localhost:5000/expenses
+
+### Pobierz szczegóły wydatku o ID 1
+GET http://localhost:5000/expenses/1
+
+### Pobierz szczegóły wydatku o nieistniejącym ID
+GET http://localhost:5000/expenses/999
+
+### Wywołaj sztuczny błąd serwera
+GET http://localhost:5000/expenses/error
+
+### Sprawdź brak istniejącej ścieżki
+GET http://localhost:5000/nonexistent
+
+### Test searcha
+GET http://localhost:5000/expenses/search?category=Jedzenie
