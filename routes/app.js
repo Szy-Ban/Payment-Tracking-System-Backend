@@ -19,6 +19,21 @@ app.use((req, res, next) => {
   next();
 });
 
+// Middleware autoryzacji
+app.use('/admin', (req, res, next) => {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader || authHeader !== 'secret-token') {
+    return res.status(403).send({
+      error: 'Dostęp zabroniony',
+      message: 'Brak ważnego nagłówka Authorization',
+    });
+  }
+
+  next();
+});
+
+
 //main root
 app.get('/', (req, res) => {
   res.send('API Śledzenia wydatków w Express.js');
