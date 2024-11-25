@@ -1,7 +1,17 @@
 const express = require('express');
 const app = express();
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
+
+// Wymuś poprawny host w czasie ładowania Swagger UI
+swaggerDocument.host = 'localhost:5000';
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
 app.use(express.json());
+
 
 app.use('/static', express.static("public"));
 
@@ -13,6 +23,7 @@ app.use((req, res, next) => {
   console.log(`[${timestamp}] ${method} ${url}`);
   next();
 });
+
 
 // Middleware autoryzacji
 app.use('/admin', (req, res, next) => {

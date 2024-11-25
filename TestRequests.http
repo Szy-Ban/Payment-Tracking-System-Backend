@@ -17,4 +17,49 @@ GET http://localhost:5000/expenses/error
 GET http://localhost:5000/nonexistent
 
 ### Test searcha dodać message errora
-GET http://localhost:5000/expenses/search?category=Jedzeni
+GET http://localhost:5000/expenses/search?category=Jedzenie
+
+
+### Dodawanie
+POST http://localhost:5000/expenses
+Content-Type: application/json
+
+{
+  "title": "Nowa książka",
+  "category": "Edukacja",
+  "amount": 100.0,
+  "date": "2024-11-25"
+}
+
+### Aktualizacja całego
+PUT http://localhost:5000/expenses/1
+Content-Type: application/json
+
+{
+"title": "Zakupy spożywczeTest",
+"category": "Jedzenie",
+"amount": 200.0,
+"date": "2024-11-24"
+}
+
+###Test aktualizacji
+
+GET http://localhost:5000/expenses/1
+
+
+### Aktualizacja czesc
+PATCH http://localhost:5000/expenses/1
+Content-Type: application/json
+
+{
+"amount": 250.0
+}
+
+### Usuwanie
+DELETE http://localhost:5000/expenses/1
+Content-Type: application/json
+
+
+
+
+
