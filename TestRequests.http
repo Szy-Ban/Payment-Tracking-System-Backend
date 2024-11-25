@@ -16,5 +16,5 @@ GET http://localhost:5000/expenses/error
 ### Sprawdź brak istniejącej ścieżki
 GET http://localhost:5000/nonexistent
 
-### Test searcha
-GET http://localhost:5000/expenses/search?category=Jedzenie
+### Test searcha dodać message errora
+GET http://localhost:5000/expenses/search?category=Jedzeni
