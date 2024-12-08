@@ -3,12 +3,19 @@ const app = express();
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
+const cors = require('cors');
 
-// Wymuś poprawny host w czasie ładowania Swagger UI
 swaggerDocument.host = 'localhost:5000';
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+const corsOptions = {
+  origin: ['http://localhost:3000/'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}
+
+app.use(cors("*", corsOptions))
 
 app.use(express.json());
 
